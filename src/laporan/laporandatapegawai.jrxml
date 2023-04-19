@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from data_pegawai]]>
+	</queryString>
+	<field name="nik" class="java.lang.String"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="no_telepon" class="java.lang.String"/>
+	<field name="bagian" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<line>
+				<reportElement x="-2" y="78" width="802" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="287" y="2" width="271" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CV. TIRTA KARYA SEJAHTERA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="29" width="444" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Harimau Jawa No.3, RT.3/RW.6, Munjul, Cipayung, Jakarta Timur, DKI Jakarta 13850]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="49" width="350" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No.Telp : 081285035498   Email : cv.tirtakaryasejahtera@gmail.com]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="0" width="142" height="79"/>
+				<imageExpression><![CDATA["C:\\Users\\asus\\Documents\\NetBeansProjects\\TKSaplikasi\\src\\gambar\\CV.TKS. (logo).png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="286" y="6" width="273" height="27"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PEGAWAI]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="39" width="802" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="6" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="160" y="6" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="320" y="6" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="480" y="6" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="640" y="6" width="160" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="7" width="160" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nik Pegawai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="7" width="160" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nama Pegawai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="7" width="160" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="7" width="160" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nomor telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="7" width="160" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Bagian]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-1" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="160" y="-1" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="320" y="-1" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="480" y="-1" width="160" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="640" y="-1" width="160" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="-1" width="160" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="-1" width="160" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="-1" width="160" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="-1" width="160" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{no_telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="-1" width="160" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bagian}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="145" splitType="Stretch">
+			<staticText>
+				<reportElement x="654" y="3" width="38" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="692" y="3" width="108" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="696" y="23" width="54" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Pemilik]]></text>
+			</staticText>
+			<line>
+				<reportElement x="673" y="106" width="106" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from mobilkembali]]>
+	</queryString>
+	<field name="no_transaksi" class="java.lang.String"/>
+	<field name="no_plat" class="java.lang.String"/>
+	<field name="merk" class="java.lang.String"/>
+	<field name="tipe" class="java.lang.String"/>
+	<field name="tahun" class="java.lang.String"/>
+	<field name="tanggal" class="java.lang.String"/>
+	<field name="harga" class="java.lang.String"/>
+	<field name="jumlah" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="89" width="802" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="308" y="11" width="271" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CV. TIRTA KARYA SEJAHTERA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="38" width="444" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Harimau Jawa No.3, RT.3/RW.6, Munjul, Cipayung, Jakarta Timur, DKI Jakarta 13850]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="58" width="350" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No.Telp : 081285035498   Email : cv.tirtakaryasejahtera@gmail.com]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="0" width="142" height="90"/>
+				<imageExpression><![CDATA["C:\\Users\\asus\\Documents\\NetBeansProjects\\TKSaplikasi\\src\\gambar\\CV.TKS. (logo).png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="321" y="6" width="240" height="27"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN MOBIL KEMBALI]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="37" width="802" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<rectangle>
+				<reportElement x="88" y="2" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="177" y="2" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="266" y="2" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="2" width="90" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="444" y="2" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="533" y="2" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="622" y="2" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="711" y="2" width="91" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="2" width="88" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="1" y="3" width="88" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[No Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="89" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[No Plat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="178" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Merk Mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="267" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Tipe Mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="356" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Tahun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="445" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="534" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Harga Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="623" y="3" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Lama Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="712" y="3" width="91" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="-1" width="88" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="88" y="-1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="177" y="-1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="266" y="-1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="-1" width="90" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="444" y="-1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="533" y="-1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="622" y="-1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="711" y="-1" width="91" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="2" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{no_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{no_plat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{merk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="267" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tipe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tahun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="534" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="0" width="88" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="712" y="0" width="90" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="129" splitType="Stretch">
+			<staticText>
+				<reportElement x="656" y="0" width="38" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="694" y="0" width="108" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="703" y="105" width="54" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Pemilik]]></text>
+			</staticText>
+			<line>
+				<reportElement x="675" y="103" width="106" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
